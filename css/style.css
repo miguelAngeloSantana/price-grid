@@ -1,0 +1,219 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#topo {
+    display:flex;
+    justify-content: center;
+}
+
+
+.conteiner {
+    width: 624px;
+}
+
+.top-text h1, h2, p {
+    min-width: 319px;
+    display: flex;
+    align-content: center;
+    padding-left: 30px;
+    margin-bottom: 42px;
+}
+
+.top-text h1 {
+    color: #379f97;
+}
+
+.top-text h2 {
+    color: #c2d562;
+}
+
+.top-text p {
+    color: #d2d2d2;
+    width: 550px;
+    margin-bottom: 56px;
+    line-height: 22px;
+}
+
+/*Configurando o lado esquerdo*/
+
+
+
+#baixo {
+    display: flex;
+    justify-content: center;
+}
+
+#baixo .esquerdo {
+    display: flex;
+    background-color: #2cb3af; 
+    width: 315px;
+    height: 280px;
+}
+
+
+
+.esquerdo .texto-baixo h1 {
+    color: #cbffff;
+    padding-left: 30px;
+    padding-top: 27px;
+    font-size: 16px;
+}
+
+.esquerdo .texto-baixo h2 {
+    color: #f2fefc;
+}
+
+.esquerdo .texto-baixo h3 {
+    color: #83eef0;
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+
+.esquerdo .bot {
+    margin-top: 19px;
+    margin-left: 30px;
+    display: inline-block;
+    border: 1px solid #67b679;
+    border-radius: 7px;
+    padding: 14px 99px;
+    background-color: #c0de32;
+    color: #f2ffb5;
+    box-shadow: 0px 4px 2px #27a7a4;
+}
+
+/*lado direito*/
+.lado-direito {
+    display: flex;
+    justify-content: center;
+}
+
+
+.direito {
+    display: flex;
+    background-color: #4bbcbf;
+    max-width: 309px;
+    height: 280px;
+    
+}
+
+.direito .texto-direito h1 {
+    padding-left: 30px;
+    color: #eaffff;
+}   
+
+.direito .texto-direito p {
+    text-align: left;
+    color: #9deef2;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+/*For device largen than 624px*/
+@media (max-width: 624px) {
+    #baixo {
+        flex-direction: column;
+        width: 309px;
+        margin-left: 100px;
+    }
+
+    #baixo .esquerdo {
+        width: 310px;
+    }
+
+    #topo .top-text h1 {
+        margin-left: 130px;
+        font-size: 23px;
+    }
+
+    #topo .top-text h2 {
+        font-size: 18px;
+        margin-left: 90px;
+        padding-right: 20px;
+    }
+
+    #topo .top-text p {
+        font-size: 14px;
+        margin-left: 90px;
+        width: 300px;
+    }
+    
+}
+
+/*For device largen than 320px*/
+@media (max-width:320px) {
+    #baixo {
+        position: absolute;
+        right: -20px;
+    }
+
+    #topo .top-text h1 {
+        position: relative;
+        right: 8px;
+    }
+
+    #baixo {
+        position: absolute;
+        left: -50px;
+        padding-left: 20px;
+    }
+}
+
+/*For device largen than 375px*/
+@media (max-width:375px) {
+
+    #baixo {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #baixo .esquerdo {
+        position: relative;
+        right: 230px;
+    }
+
+    #topo .top-text h1 {
+        position: relative;
+        right: 10px;
+    }
+}
+
+/*For device largen than 768px*/
+@media (max-width:768px) {
+    #baixo {
+        flex-direction: column;
+    }
+
+    #baixo .esquerdo {
+        margin-left: 200px;
+        width: 309px;
+    }
+
+    #baixo .direito {
+        margin-right: 60px;
+    }
+}
+
+/*For device largen than 425px*/
+@media (max-width:425px) {
+    #baixo {
+        flex-direction: column;        
+    }
+
+    #baixo .esquerdo {
+        position: relative;
+        right: 230px;
+    }
+
+    #top .top-text h1 {
+        margin-left: 100px;
+    }
+}

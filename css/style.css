@@ -5,16 +5,19 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #ccc;
 }
 
 #topo {
     display:flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
 .conteiner {
     width: 624px;
+    background-color: white;
 }
 
 .top-text h1, h2, p {
